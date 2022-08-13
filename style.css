@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: hsl(0, 0%, 98%);
+  font-family: "poppins", sans-serif;
+  
+}
+
+.head1,
+.head2,
+.paragraph {
+  text-align: center;
+}
+
+.head1 {
+  margin-top: 3%;
+  color: hsl(229, 6%, 66%);
+  font-weight: 200;
+}
+
+.head2 {
+  color: hsl(234, 12%, 34%);
+  font-weight: 600;
+}
+.paragraph {
+  width: 20em;
+  
+  margin: auto;
+  color: hsl(229, 6%, 66%);
+  margin-top: 0.5em;
+}
+
+.content { 
+    margin: 3em auto;
+
+
+     display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.2em;  
+  
+}
+
+.icons {
+display: flex;
+justify-content: flex-end;
+padding-top: 2em;
+padding-bottom: 0;
+}
+
+.super {
+  padding: 1em;
+  padding-right: 1.5em;
+  padding-left: 1.5em;
+  background-color: white;
+  border-radius: 10px;
+  border-top: 4px solid hsl(180, 62%, 55%);
+  box-shadow: 4px 4px 10px gray ;
+  width: 15.6em;
+}
+
+.super h3 {
+  color:hsl(234, 12%, 34%);
+  font-weight: 600;
+}
+
+.super p {
+  color:hsl(229, 6%, 66%);
+  font-size: 12px;
+  font-weight: 400;
+  width: 250px;
+}
+
+.teamBuilder {
+  padding: 1em;
+  padding-left: 1.5em;
+  background-color: white;
+  border-radius: 10px;
+  padding-right: 1.5em;
+  border-top: 4px solid hsl(0, 78%, 62%);
+  box-shadow: 4px 4px 10px gray ;
+  width: 15.6em;
+}
+
+.teamBuilder h3 {
+  color:hsl(234, 12%, 34%);
+  font-weight: 600;
+}
+
+.teamBuilder p {
+  color:hsl(229, 6%, 66%);
+  font-size: 12px;
+  font-weight: 400;
+  width: 250px;
+}
+.karma {
+  padding: 1em;
+  background-color: white;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  border-radius: 10px;
+  border-top: 4px solid hsl(34, 97%, 64%);
+  box-shadow: 4px 4px 10px gray ;
+  width: 15.6em;;
+}
+
+.karma h3 {
+  color:hsl(234, 12%, 34%);
+  font-weight: 600;
+}
+
+.karma p {
+  color:hsl(229, 6%, 66%);
+  font-size: 12px;
+  font-weight: 400;
+  width: 230px;
+}
+.calc {
+  padding: 1em;
+  background-color: white;
+  border-radius: 10px;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  border-top: 4px solid hsl(212, 86%, 64%);
+  box-shadow: 4px 4px 10px gray ;
+ width: 15.6em;
+ 
+}
+
+.calc h3 {
+  color:hsl(234, 12%, 34%);
+  font-weight: 600;
+}
+
+.calc p {
+  color:hsl(229, 6%, 66%);
+  font-size: 12px;
+  font-weight: 400;
+  width: 230px;
+}
+
+@media  (min-width: 700px) {
+.content {
+  width: 30em;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+}
+} 
+
+@media (min-width: 1200px) {
+  .content {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+   
+  }
+
+  .karma {
+    order: 3;
+  }
+.content .side {
+transform: translateY(50%);
+}
+}
